@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classify</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/blackfavicon.png" type="image/x-icon">
+
+    <!-- Sora Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS Script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Style.css file -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Iconscout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+
+<body>
+    <div id="loader"
+        class=" absolute top-0 left-0 flex justify-center items-center min-h-screen bg-black z-[100] w-[100%]">
+        <img src="/Assets/logo.png" alt="" class="w-[15%]">
+    </div>
+    <header id="navbar" class="p-[7px] flex justify-between items-center pl-[80px] pr-[80px]">
+        <nav id="logo" class="flex items-center">
+            <a href="/index.html" class="no-underline">
+                <img src="/Assets/logo.png" alt="" class=" inline-block w-[180px]">
+            </a>
+
+            <div id="nav" class="flex items-center relative left-[100px]">
+                <div class="flex items-center px-[15px]">
+                    <a href="" class="text-white">Source</a>
+                    <i class="uil uil-angle-down text-white text-[20px] px-[4px]"></i>
+                </div>
+                <div class="flex items-center px-[15px]">
+                    <a href="" class="text-white ">Pricing</a>
+                    <i class="uil uil-angle-down text-white text-[20px] px-[4px]"></i>
+                </div>
+                <div class="flex items-center px-[15px]">
+                    <a href="" class="text-white">Resources</a>
+                    <i class="uil uil-angle-down text-white text-[20px] px-[4px]"></i>
+                </div>
+                <div class="flex items-center px-[15px]">
+                    <a href="" class="text-white">What's New</a>
+                    <i class="uil uil-angle-down text-white text-[20px] px-[4px]"></i>
+                </div>
+            </div>
+        </nav>
+
+        <div id="btns" class="flex gap-8 items-center">
+            <a href="login/login.html" class="hover:underline underline-offset-2 text-[#ffffff] cursor-pointer">Log
+                in</a>
+            <button id="signupBtn1"
+                class="py-[10px] px-[30px] rounded-full bg-white text-[#181818] font-semibold cursor-pointer">Start free
+                trail</button>
+        </div>
+        <video autoplay loop muted>
+            <source src="assets/bgvideo.mp4" type="video/mp4">
+        </video>
+        <div id="blackGredient"></div>
+    </header>
+
+    <section id="home" class="absolute top-[25%] z-[10] left-[6%]">
+        <h1 class="relative  text-[#ffffff] text-[3rem] w-[50%] font-bold ">Schoolify: Empowering Education,
+            One Click at a Time</h1>
+        <p class="my-[10px] relative text-[#ffffff] text-[18px] font-medium w-[40%]">Empowering Education for
+            All: Schoolify Supports the Future of Learning, from Schools to Colleges and Beyond</p>
+
+        <div class="flex justify-between items-center relative top-[150px]">
+            <div class="flex items-center gap-8">
+                <button id="signupBtn"
+                    class="py-[10px] px-[30px] rounded-full bg-white text-[#181818] font-semibold cursor-pointer">Start
+                    free trail</button>
+                <p class="w-[40%] text-white">Start for free, then get your first 3 months for ₹20/mo.</p>
+            </div>
+            <div class="rounded-full border border-[#d4d4d4] bg-[#ffffff5a] flex items-center absolute right-[6%] xl:right-[-2%]">
+                <i class="uil uil-play text-white text-[20px] px-[4px] relative left-[10px]"></i>
+                <button id="signupBtn2" class="py-[10px] px-[30px]   text-[#ffffff] font-medium cursor-pointer ">Watch
+                    the Schoolify Dashboard</button>
+            </div>
+        </div>
+    </section>
+    <script src="/script.js"></script>
+</body>
+
+</html>

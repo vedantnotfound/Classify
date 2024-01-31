@@ -12,10 +12,10 @@ window.addEventListener("load", function () {
 
 let signUpBtn1 = document.getElementById("signupBtn1");
 signUpBtn1.addEventListener("click",function(){
-    window.location.assign("/login/signup.html");
+    window.location.assign("/Signup/signup.html");
 });
 
 let signUpBtn2 = document.getElementById("signupBtn2");
 signUpBtn2.addEventListener("click",function(){
-    window.location.assign("/login/signup.html");
+    window.location.assign("/Signup/signup.html");
 })

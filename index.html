@@ -31,46 +31,67 @@
         class=" absolute top-0 left-0 flex justify-center items-center min-h-screen bg-black z-[100] w-[100%]">
         <img src="/Assets/logo.png" alt="" class="w-[15%]">
     </div>
-    <header id="navbar" class="p-[7px] flex justify-between items-center pl-[80px] pr-[80px]">
-        <nav id="logo" class="flex items-center">
+    <header id="navbar" class="p-[7px] flex justify-between items-center pl-[80px] pr-[80px] ">
+        <nav id="logo" class="flex items-center justify-normal  fixed top-[0px] w-[100%]">
             <a href="/index.html" class="no-underline">
                 <img src="/Assets/logo.png" alt="" class=" inline-block w-[180px]">
             </a>
 
             <div id="nav" class="flex items-center relative left-[100px]">
-                <div class="flex items-center px-[15px]">
-                    <a href="" class="text-white">Source</a>
-                    <i class="uil uil-angle-down text-white text-[20px] px-[4px]"></i>
+                <div class="dropdown ">
+                    <button class="dropbtn flex items-center hover:translate-y-3 transition duration-[0.3s]">Source <i class="uil uil-angle-down text-white text-[20px] px-[4px]"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
                 </div>
-                <div class="flex items-center px-[15px]">
-                    <a href="" class="text-white ">Pricing</a>
-                    <i class="uil uil-angle-down text-white text-[20px] px-[4px]"></i>
+
+                <div class="dropdown ">
+                    <button class="dropbtn flex items-center hover:translate-y-3 transition duration-[0.3s]">Pricing <i class="uil uil-angle-down text-white text-[20px] px-[4px]"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
                 </div>
-                <div class="flex items-center px-[15px]">
-                    <a href="" class="text-white">Resources</a>
-                    <i class="uil uil-angle-down text-white text-[20px] px-[4px]"></i>
+
+                <div class="dropdown ">
+                    <button class="dropbtn flex items-center hover:translate-y-3 transition duration-[0.3s]">Resources <i class="uil uil-angle-down text-white text-[20px] px-[4px]"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
                 </div>
-                <div class="flex items-center px-[15px]">
-                    <a href="" class="text-white">What's New</a>
-                    <i class="uil uil-angle-down text-white text-[20px] px-[4px]"></i>
+                
+                <div class="dropdown ">
+                    <button class="dropbtn flex items-center hover:translate-y-3 transition duration-[0.3s]">                    <a href="" class="text-white">What's New</a>
+                        <i class="uil uil-angle-down text-white text-[20px] px-[4px]"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
                 </div>
+            </div>
+            <div id="btns" class="flex gap-8 items-center absolute right-[180px]">
+                <a href="login/login.html" class="hover:underline underline-offset-2 text-[#ffffff] cursor-pointer">Log
+                    in</a>
+                <button id="signupBtn1"
+                    class="py-[10px] px-[30px] rounded-full bg-white text-[#181818] font-semibold cursor-pointer">Start free
+                    trail</button>
             </div>
         </nav>
 
-        <div id="btns" class="flex gap-8 items-center">
-            <a href="login/login.html" class="hover:underline underline-offset-2 text-[#ffffff] cursor-pointer">Log
-                in</a>
-            <button id="signupBtn1"
-                class="py-[10px] px-[30px] rounded-full bg-white text-[#181818] font-semibold cursor-pointer">Start free
-                trail</button>
-        </div>
+        
         <video autoplay loop muted>
             <source src="assets/bgvideo.mp4" type="video/mp4">
         </video>
         <div id="blackGredient"></div>
     </header>
 
-    <section id="home" class="absolute top-[25%] z-[10] left-[6%]">
+    <section id="home" class="absolute top-[25%] z-[-1] left-[6%]">
         <h1 class="relative  text-[#ffffff] text-[3rem] w-[50%] font-bold ">Schoolify: Empowering Education,
             One Click at a Time</h1>
         <p class="my-[10px] relative text-[#ffffff] text-[18px] font-medium w-[40%]">Empowering Education for
@@ -83,7 +104,8 @@
                     free trail</button>
                 <p class="w-[40%] text-white">Start for free, then get your first 3 months for ₹20/mo.</p>
             </div>
-            <div class="rounded-full border border-[#d4d4d4] bg-[#ffffff5a] flex items-center absolute right-[6%] xl:right-[-2%]">
+            <div
+                class="rounded-full border border-[#d4d4d4] bg-[#ffffff5a] flex items-center absolute right-[6%] xl:right-[-2%]">
                 <i class="uil uil-play text-white text-[20px] px-[4px] relative left-[10px]"></i>
                 <button id="signupBtn2" class="py-[10px] px-[30px]   text-[#ffffff] font-medium cursor-pointer ">Watch
                     the Schoolify Dashboard</button>

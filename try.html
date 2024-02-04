@@ -26,9 +26,9 @@
 </head>
 
 <body>
-    <header>
+    <header class="">
         <nav id="navbar"
-            class="flex items-center h-[70px] pl-[20px] pr-[20px] justify-between fixed w-[100%] lg:pl-[100px] lg:pr-[100px]">
+            class="flex items-center h-[70px] pl-[20px] pr-[20px] justify-between fixed w-screen lg:pl-[100px] lg:pr-[100px] z-[999]">
             <div id="logo" class="lg:hidden">
                 <img src="/Assets/logo.png" alt="" class="w-[135px]">
             </div>
@@ -58,20 +58,19 @@
 
             <div class="hidden lg:flex lg:items-center gap-[30px]">
                 <li class="text-white underline underline-offset-2 list-none"><a href="">Log in</a></li>
-                <button class="w-[155px] h-[45px] rounded-full bg-white text-[#000] font-semibold">Start free
+                <button class="w-[170px] h-[45px] rounded-full bg-white text-[#000] font-semibold">Start free
                     trail</button>
             </div>
             <div class="flex items-center gap-[20px] lg:hidden">
                 <li class="text-[#fff] list-none underline underline-offset-2 text-[15px]"><a href="">Start free
                         trail</a></li>
-                <div class="w-[45px] h-[45px] rounded-full flex items-center justify-center cursor-pointer ">
+                <div id="menuBtn" class="w-[45px] h-[45px] rounded-full flex items-center justify-center cursor-pointer ">
                     <i class="uil uil-bars text-[#fff] text-[22px]"></i>
                 </div>
             </div>
-
         </nav>
     </header>
-    <section class="absolute bg-black top-0 left-0 w-[100%] min-h-[100vh] z-[1000]">
+    <section id="mobileMenu" class="transition duration-[0.5s] fixed bg-black top-0 left-0 w-[100%] min-h-[100vh] z-[1000] translate-x-[1100px] lg:hidden">
         <nav id="navbar"
             class="flex items-center h-[70px] pl-[20px] pr-[20px] justify-between fixed w-[100%] lg:pl-[100px] lg:pr-[100px] border-b-[1px] border-[#2b2b2b]">
             <div id="logo" class="lg:hidden">
@@ -85,7 +84,7 @@
             <div class="flex items-center gap-[20px] lg:hidden">
                 <li class="text-[#fff] list-none underline underline-offset-2 text-[15px]"><a href="">Start free
                         trail</a></li>
-                <div class="w-[45px] h-[45px] rounded-full flex items-center justify-center cursor-pointer ">
+                <div id="closeMenu" class="w-[45px] h-[45px] rounded-full flex items-center justify-center cursor-pointer ">
                     <i class="uil uil-times text-[#fff] text-[22px]"></i>
                 </div>
             </div>
@@ -106,7 +105,7 @@
             
         </div>
         
-        <div class="absolute bottom-5 p-[30px] flex gap-[20px] items-center w-[100%]">
+        <div class="absolute bottom-[70px] p-[30px] flex gap-[20px] items-center w-[100%]">
             <button class="h-[45px] w-[50%] bg-transparent border-[2px] border-[#fff9f9] text-[#fff] rounded-full">Log in</button>
             <button class="h-[45px] w-[50%] bg-[#fff] border-[1px] border-[#505050] rounded-full font-medium">Sign up</button>
         </div>
@@ -117,23 +116,33 @@
             <source src="/Assets/bgvideo.mp4" type="video/mp4">
         </video>
     </section>
-    <section id="home" class="p-[30px] relative  top-[100px] z-[100]">
-        <h1 class="font-semibold text-[2rem] sm:text-[2.4rem] text-[#fff] relative leading-[45px] font-[Poppins] sm:w-[70%]">Making Education
-            Accessible to All</h1>
+    <section id="home" class="p-[30px] relative  top-[150px] z-[100] lg:pr-[100px] lg:pl-[100px] lg:top-[200px]">
+        <h1 class="font-semibold text-[2rem] sm:text-[2.4rem] text-[#fff] relative leading-[45px] font-[Poppins] sm:w-[70%] lg:text-[3rem] lg:leading-[65px]">Making Education <br class="hidden lg:block"> Accessible to All</h1>
 
-        <p class="text-[#fff] font-light relative top-[20px] sm:w-[70%]">Empower educators. Integrate tools. Gain insights.
-            Simplify payments. Revolutionize teaching online</p>
+        <p class="text-[#fff] font-light relative top-[20px] sm:w-[70%] lg:text-[20px] min-[900px]:w-[60%] lg:top-[35px] lg:font-extralight">Empower educators. Integrate tools. Gain insights.
+            <br class="hidden lg:block">  Simplify payments. Revolutionize teaching online</p>
 
-        <div class="w-[100%] flex flex-col sm:flex-row items-center justify-between sm:gap-[20px]">
-            <div class="w-[100%] flex flex-col sm:w-[50%]">
+        <div class="lg:hidden w-[100%] flex flex-col sm:flex-row items-center justify-between sm:gap-[20px] ">
+            <div class="w-[100%] flex flex-col sm:w-[50%] min-[900px]:gap-[10px]">
                 <button
                     class="w-[100%] relative top-[80px] bg-white text-[#000] px-[20px] py-[10px] border-none rounded-full font-medium">Start
                     free trail</button>
 
-                <p class=" text-[#fff] relative top-[90px] font-extralight text-[0.875rem]">Start for free, then get
+                <p class=" text-[#fff] relative top-[90px] min-[900px]:top-[80px] font-extralight text-[0.875rem]">Start for free, then get
                     your first 3 months for ₹20/mo.</p>
             </div>
-            <button id="watchBtn" class="sm:top-[60px] min-[825px]:top-[70px]   w-[100%] relative top-[120px] bg-[#ffffff5a] text-[#fff] px-[20px] py-[10px] border-none rounded-full font-normal flex items-center justify-center gap-[10px] sm:w-[50%]"><i class="uil uil-play"></i> Watch full story classify</button>
+            <button id="watchBtn" class="sm:top-[60px] min-[825px]:top-[70px]  min-[900px]:top-[65px] w-[100%] relative top-[120px] bg-[#ffffff5a] text-[#fff] px-[20px] py-[10px] border-none rounded-full font-normal flex items-center justify-center gap-[10px] sm:w-[50%]"><i class="uil uil-play"></i> Watch full story classify</button>
+        </div>
+        <div class="hidden lg:flex items-start justify-between relative top-[230px] xl:top-[250px]">
+            <div class="flex gap-[20px] items-start justify-start">
+                <button
+                    class="bg-[#fff] h-[45px] w-[170px] rounded-full font-semibold">Start
+                    free trail</button>
+
+                <p class="text-[#fff] text-[15px] font-extralight">Start for free, then get <br class="hidden lg:block ">
+                    your first 3 months for ₹20/mo.</p>
+            </div>
+            <button id="watchBtn" class="text-[#fff] bg-[#ffffff5a] w-[280px] h-[45px] rounded-full"><i class="uil uil-play"></i> Watch full story classify</button>
         </div>
     </section>
     <div id="blackGredient"></div>
